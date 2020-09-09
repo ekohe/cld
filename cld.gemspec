@@ -10,5 +10,5 @@ Gem::Specification.new "cld", CLD::VERSION do |gem|
   gem.files         = `git ls-files -- {ext,lib}/*`.split("\n") + ["LICENSE", "README.md"]
   gem.extensions    = ["ext/cld/extconf.rb"]
 
-  gem.add_dependency "ffi"
+  gem.add_dependency "ffi", '~> 1.1.5'
 end
